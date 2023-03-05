@@ -1,0 +1,26 @@
+{
+    "productList":
+    [
+        {
+            "size": "",
+            "imageLink": "",
+            "title": "Ветчина и сыр ",
+            "cost": 500,
+            "description": ""
+        },
+        {
+            "size": "",
+            "imageLink": "",
+            "title": "Ветчина и грибы ",
+            "cost": 700,
+            "description": ""
+        },
+        {
+            "size": "",
+            "imageLink": "",
+            "title": "4 сыра",
+            "cost": 750,
+            "description": ""
+        }
+    ]
+}
