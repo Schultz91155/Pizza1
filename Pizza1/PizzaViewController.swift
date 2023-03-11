@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import Kingfisher
+
 
 class PizzaViewController: UIViewController{
     @IBOutlet weak var tableView: UITableView!
@@ -84,10 +86,20 @@ extension PizzaViewController : UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyCell", for: indexPath)
-        guard let myCell = cell as? PizzaCell else{
-            return cell
+        
+        if
+            let pizzaCell = cell as? PizzaCell,
+            let pizza = config?.productList[indexPath.row]{
+            pizzaCell.titleLabel.text = pizza.title
+            pizzaCell.descriptionLabel.text = pizza.description
+            let url = URL(string: pizza.imageLink)!
+            pizzaCell.imageViewCell.kf.setImage(with: Source.network(url))
+            
+            
         }
-        return myCell
+            
+        
+        return cell
     }
     
 
