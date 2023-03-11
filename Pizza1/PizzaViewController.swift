@@ -27,6 +27,7 @@ class PizzaViewController: UIViewController{
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        fetchData()
         
         /*
         Создание JSON
@@ -94,6 +95,7 @@ extension PizzaViewController : UITableViewDataSource{
             pizzaCell.descriptionLabel.text = pizza.description
             let url = URL(string: pizza.imageLink)!
             pizzaCell.imageViewCell.kf.setImage(with: Source.network(url))
+            
             
             
         }
