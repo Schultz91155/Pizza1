@@ -18,8 +18,6 @@ struct Product : Codable
     let size : String
 }
 
-struct ProductStorage : Codable{
-    var productList : [Product]
-}
+
 
 
