@@ -23,6 +23,7 @@ class ConfigFletcher{
             
             guard let data = complitionHAndlerData else {return}
             let JSONString = String(data: data, encoding: .utf8)
+            print(JSONString)
             do{
                 let storage = try JSONDecoder().decode(AppConfig.self, from: data)
                 completion(nil, storage)
