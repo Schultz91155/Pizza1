@@ -9,7 +9,7 @@ import Foundation
 
 class ConfigFletcher{
     
-    let configURL = URL(string: "https://github.com/Schultz91155/Pizza1/blob/main/Pizza1/ProductStorage.json)")!
+    let configURL = URL(string: "https://raw.githubusercontent.com/Schultz91155/Pizza1/main/Pizza1/ProductStorage.json")!
     
     func fetchConfig (completion : @escaping ((Error? , AppConfig?) -> Void) ){
         
