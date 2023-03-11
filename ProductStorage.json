@@ -1,0 +1,26 @@
+{
+    "productList":
+    [
+        {
+            "size": "",
+            "imageLink": "https://github.com/Schultz91155/Pizza1/blob/main/Pizza1/Assets.xcassets/Маргарита.imageset/pitstsa-margarita.jpg",
+            "title": "Маргартита ",
+            "cost": 500,
+            "description": ""
+        },
+        {
+            "size": "",
+            "imageLink": "https://github.com/Schultz91155/Pizza1/blob/main/Pizza1/Assets.xcassets/Неаполитанская.imageset/pitstsa-neapolitanskaya.jpg",
+            "title": "Неаполитанская ",
+            "cost": 700,
+            "description": ""
+        },
+        {
+            "size": "",
+            "imageLink": "https://github.com/Schultz91155/Pizza1/blob/main/Pizza1/Assets.xcassets/Четыре%20сыра.imageset/pitstsa-chetyre-syra.jpg",
+            "title": "Четыре сыра",
+            "cost": 750,
+            "description": ""
+        }
+    ]
+}
