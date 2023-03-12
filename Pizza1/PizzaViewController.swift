@@ -86,7 +86,7 @@ extension PizzaViewController : UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //config?.productList.count ?? 0
-        config?.productList.count ?? 0
+        config?.productList[1].count   ?? 0
     }
     
     
