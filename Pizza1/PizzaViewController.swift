@@ -102,8 +102,6 @@ extension PizzaViewController : UITableViewDataSource{
             let url = URL(string:pizza.imageLink)!
             pizzaCell.imageViewCell.kf.setImage(with: Source.network(url))
             
-            
-            
         }
             
         
@@ -112,6 +110,10 @@ extension PizzaViewController : UITableViewDataSource{
     
 
     
+    
+}
+
+extension PizzaViewController : UITableViewDelegate{
     
 }
 
