@@ -14,6 +14,7 @@ class ConfigFletcher{
     func fetchConfig (completion : @escaping ((Error? , AppConfig?) -> Void) ){
         
         let request = URLRequest(url: configURL)
+        
         let task = URLSession.shared.dataTask(with: request,
                                               completionHandler: {(complitionHAndlerData, complitionHandlerResponse, copmlitionHandlerError) in
         if let error = copmlitionHandlerError{

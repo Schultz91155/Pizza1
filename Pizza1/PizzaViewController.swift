@@ -93,7 +93,7 @@ extension PizzaViewController : UITableViewDataSource{
             let pizza = config?.productList[indexPath.row]{
             pizzaCell.titleLabel.text = pizza.title
             pizzaCell.descriptionLabel.text = pizza.description
-            print(pizza.imageLink)
+            pizzaCell.costLabel.text = "от \(pizza.cost) р."
             let url = URL(string:pizza.imageLink)!
             pizzaCell.imageViewCell.kf.setImage(with: Source.network(url))
             
@@ -122,4 +122,7 @@ class PizzaCell : UITableViewCell{
     @IBOutlet weak var titleLabel: UILabel!
     
     @IBOutlet weak var descriptionLabel: UILabel!
+    
+    @IBOutlet weak var costLabel: UILabel!
+    
 }
