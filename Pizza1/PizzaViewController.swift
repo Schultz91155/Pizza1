@@ -117,9 +117,7 @@ extension PizzaViewController : UITableViewDelegate{
     
 }
 
-extension PizzaViewController : UITableViewDelegate{
-    
-}
+
 
 class PizzaCell : UITableViewCell{
     
