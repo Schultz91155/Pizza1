@@ -6,21 +6,21 @@
             "imageLink": "https://github.com/Schultz91155/Pizza1/blob/main/Pizza1/src/pitstsa-margarita.jpg?raw=true",
             "title": "Маргарита",
             "cost": 500,
-            "description": " \\n ● сладкие томаты; \\n ● сладкие томаты; "
+            "description": " сладкие томаты, сыр моцарелла, оливковое масло, пряный базилик."
         },
         {
             "size": "",
             "imageLink": "https://github.com/Schultz91155/Pizza1/blob/main/Pizza1/src/pitstsa-neapolitanskaya.jpg?raw=true",
             "title": "Неаполитанская",
             "cost": 700,
-            "description": ""
+            "description": "пармезан, сладкие помидоры, орегано, анчоусы, базилик"
         },
         {
             "size": "",
             "imageLink": "https://github.com/Schultz91155/Pizza1/blob/main/Pizza1/src/pitstsa-chetyre-syra.jpg?raw=true",
             "title": "4 сыра",
             "cost": 750,
-            "description": ""
+            "description": "моцарелла, пармезан, фонтина, дор-блю"
         }
     ]
 }
