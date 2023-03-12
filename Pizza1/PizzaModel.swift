@@ -16,6 +16,7 @@ struct Product : Codable
     let cost : Int
     let imageLink : String
     let size : String
+    let type : String
 }
 
 
