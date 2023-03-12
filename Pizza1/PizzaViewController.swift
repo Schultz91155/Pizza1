@@ -95,7 +95,7 @@ extension PizzaViewController : UITableViewDataSource{
 
         if
             let pizzaCell = cell as? PizzaCell,
-            let pizza = config?.productList[indexPath.row]{
+            let pizza = config?.productList[1][indexPath.row]{
             pizzaCell.titleLabel.text = pizza.title
             pizzaCell.descriptionLabel.text = pizza.description
             pizzaCell.costLabel.text = "от \(pizza.cost) р."
