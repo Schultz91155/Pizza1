@@ -94,7 +94,7 @@ extension PizzaViewController : UITableViewDataSource{
             pizzaCell.titleLabel.text = pizza.title
             pizzaCell.descriptionLabel.text = pizza.description
             print(pizza.imageLink)
-            let url = URL(string:"https://github.com/Schultz91155/Pizza1/blob/main/Pizza1/src/pitstsa-margarita.jpg?raw=true")!
+            let url = URL(string:pizza.imageLink)!
             pizzaCell.imageViewCell.kf.setImage(with: Source.network(url))
             
             
