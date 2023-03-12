@@ -3,21 +3,21 @@
     [
         {
             "size": "",
-            "imageLink": "https://github.com/Schultz91155/Pizza1/blob/main/Pizza1/Assets.xcassets/Маргарита.imageset/pitstsa-margarita.jpg",
-            "title": "Ветчина и сыр ",
+            "imageLink": "https://github.com/Schultz91155/Pizza1/blob/main/Pizza1/src/pitstsa-margarita.jpg?raw=true",
+            "title": "Маргарита",
             "cost": 500,
             "description": ""
         },
         {
             "size": "",
-            "imageLink": "https://github.com/Schultz91155/Pizza1/blob/main/Pizza1/Assets.xcassets/Маргарита.imageset/pitstsa-margarita.jpg",
-            "title": "Ветчина и грибы ",
+            "imageLink": "https://github.com/Schultz91155/Pizza1/blob/main/Pizza1/src/pitstsa-neapolitanskaya.jpg?raw=true",
+            "title": "Неаполитанская",
             "cost": 700,
             "description": ""
         },
         {
             "size": "",
-            "imageLink": "https://github.com/Schultz91155/Pizza1/blob/main/Pizza1/Assets.xcassets/Маргарита.imageset/pitstsa-margarita.jpg",
+            "imageLink": "https://github.com/Schultz91155/Pizza1/blob/main/Pizza1/src/pitstsa-chetyre-syra.jpg?raw=true",
             "title": "4 сыра",
             "cost": 750,
             "description": ""
