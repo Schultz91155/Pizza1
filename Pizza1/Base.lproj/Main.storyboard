@@ -24,10 +24,10 @@
             </objects>
             <point key="canvasLocation" x="-222" y="782"/>
         </scene>
-        <!--View Controller-->
+        <!--Rolls View Controller-->
         <scene sceneID="cRE-lc-XST">
             <objects>
-                <viewController id="rza-Ug-gVU" sceneMemberID="viewController">
+                <viewController id="rza-Ug-gVU" customClass="RollsViewController" customModule="Pizza1" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Daq-8E-ga0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

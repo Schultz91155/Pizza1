@@ -14,6 +14,7 @@ class PizzaViewController: UIViewController{
     
     //создаем экземпляр класса типа configFetcher
     let fetcher = ConfigFletcher()
+
     
     var config : AppConfig? {
         didSet{
@@ -23,41 +24,44 @@ class PizzaViewController: UIViewController{
         }
     }
     
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
         fetchData()
         
-        /*
-        Создание JSON
-        let config = AppConfig(productList:
-        [
-            Product(title: "Ветчина и сыр ",
-                    description: "",
-                    cost: 500,
-                    imageLink: "",
-                    size: ""),
-            Product(title: "Ветчина и грибы ",
-                    description: "",
-                    cost: 700,
-                    imageLink: "",
-                    size: ""),
-            Product(title: "4 сыра",
-                    description: "",
-                    cost: 750 ,
-                    imageLink: "",
-                    size: "")
-            
-        ]
-        )
         
-        if let jsonData = try?  JSONEncoder().encode(config){
-            let jsonString = String(data: jsonData, encoding: .utf8)
-            print(jsonString)
-        }
-        */
-
+        /*
+         Создание JSON
+         let config = AppConfig(productList:
+         [
+         Product(title: "Ветчина и сыр ",
+         description: "",
+         cost: 500,
+         imageLink: "",
+         size: ""),
+         Product(title: "Ветчина и грибы ",
+         description: "",
+         cost: 700,
+         imageLink: "",
+         size: ""),
+         Product(title: "4 сыра",
+         description: "",
+         cost: 750 ,
+         imageLink: "",
+         size: "")
+         
+         ]
+         )
+         
+         if let jsonData = try?  JSONEncoder().encode(config){
+         let jsonString = String(data: jsonData, encoding: .utf8)
+         print(jsonString)
+         }
+         */
+        
         // Do any additional setup after loading the view.
     }
     
@@ -70,10 +74,10 @@ class PizzaViewController: UIViewController{
             
             self?.config = config
         }
+        
+        
     }
     
-    
-
 
 }
 
@@ -81,13 +85,14 @@ extension PizzaViewController : UITableViewDataSource{
     
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        //config?.productList.count ?? 0
         config?.productList.count ?? 0
     }
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyCell", for: indexPath)
-        
+
         if
             let pizzaCell = cell as? PizzaCell,
             let pizza = config?.productList[indexPath.row]{

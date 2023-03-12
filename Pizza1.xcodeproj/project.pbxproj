@@ -17,6 +17,7 @@
 		845DB0E429BC89EC007AE87E /* ConfigFletcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845DB0E329BC89EC007AE87E /* ConfigFletcher.swift */; };
 		845DB0E629BC965F007AE87E /* AppConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845DB0E529BC965F007AE87E /* AppConfig.swift */; };
 		845DB0E929BCAAAD007AE87E /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 845DB0E829BCAAAD007AE87E /* Kingfisher */; };
+		845DB0ED29BE63C6007AE87E /* RollsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 845DB0EC29BE63C6007AE87E /* RollsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		845DB0E129B4D092007AE87E /* PizzaModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaModel.swift; sourceTree = "<group>"; };
 		845DB0E329BC89EC007AE87E /* ConfigFletcher.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigFletcher.swift; sourceTree = "<group>"; };
 		845DB0E529BC965F007AE87E /* AppConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConfig.swift; sourceTree = "<group>"; };
+		845DB0EC29BE63C6007AE87E /* RollsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RollsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				845DB0E529BC965F007AE87E /* AppConfig.swift */,
 				845DB0CD29B4C07E007AE87E /* SceneDelegate.swift */,
 				845DB0DF29B4C9B4007AE87E /* PizzaViewController.swift */,
+				845DB0EC29BE63C6007AE87E /* RollsViewController.swift */,
 				845DB0D129B4C07E007AE87E /* Main.storyboard */,
 				845DB0D429B4C080007AE87E /* Assets.xcassets */,
 				845DB0D629B4C080007AE87E /* LaunchScreen.storyboard */,
@@ -158,6 +161,7 @@
 				845DB0CC29B4C07E007AE87E /* AppDelegate.swift in Sources */,
 				845DB0CE29B4C07E007AE87E /* SceneDelegate.swift in Sources */,
 				845DB0E029B4C9B4007AE87E /* PizzaViewController.swift in Sources */,
+				845DB0ED29BE63C6007AE87E /* RollsViewController.swift in Sources */,
 				845DB0E629BC965F007AE87E /* AppConfig.swift in Sources */,
 				845DB0E229B4D092007AE87E /* PizzaModel.swift in Sources */,
 				845DB0E429BC89EC007AE87E /* ConfigFletcher.swift in Sources */,
