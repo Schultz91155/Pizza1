@@ -34,7 +34,7 @@
             "title": "Маргарита",
             "cost": 1500,
             "description": "сладкие томаты, сыр моцарелла, оливковое масло, пряный базилик.",
-            "type": "pizza"
+            "fullDescription": "pizza"
         },
         {
             "size": "",
@@ -42,7 +42,7 @@
             "title": "Неаполитанская",
             "cost": 1700,
             "description": "пармезан, сладкие помидоры, орегано, анчоусы, базилик",
-            "type": "pizza"
+            "fullDescription": "pizza"
         }
 
     ]
