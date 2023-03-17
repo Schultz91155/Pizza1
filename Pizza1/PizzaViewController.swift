@@ -86,7 +86,7 @@ extension PizzaViewController : UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         //config?.productList.count ?? 0
-        config?.productList[1].count   ?? 0
+        config?.productList[0].count   ??  0
     }
     
     
@@ -95,7 +95,7 @@ extension PizzaViewController : UITableViewDataSource{
 
         if
             let pizzaCell = cell as? PizzaCell,
-            let pizza = config?.productList[1][indexPath.row]{
+            let pizza = config?.productList[0][indexPath.row]{
             pizzaCell.titleLabel.text = pizza.title
             pizzaCell.descriptionLabel.text = pizza.description
             pizzaCell.costLabel.text = "от \(pizza.cost) р."
