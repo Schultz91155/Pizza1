@@ -71,14 +71,9 @@ class PizzaViewController: UIViewController{
             if let error = error{
                 return
             }
-            
             self?.config = config
         }
-        
-        
     }
-    
-
 }
 
 extension PizzaViewController : UITableViewDataSource{
@@ -114,6 +109,18 @@ extension PizzaViewController : UITableViewDataSource{
 }
 
 extension PizzaViewController : UITableViewDelegate{
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        if let pizza = config?.productList[0][indexPath.row]{
+            
+            if let detailsPizzaVC = storyboard?.instantiateViewController(withIdentifier: "DetailsPizzaViewController") as? DetailsPizzaViewController{
+                detailsPizzaVC.pizza = pizza
+                //detailsPizzaVC.titleLabel.text = pizza.title
+                navigationController?.pushViewController(detailsPizzaVC, animated: true)
+            }
+        }
+    }
     
 }
 

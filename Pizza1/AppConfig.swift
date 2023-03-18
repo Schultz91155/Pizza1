@@ -7,5 +7,9 @@
 
 import Foundation
 struct AppConfig : Codable{
-    var productList : [[Product]]
+    var productList : [[Pizza]]
+    
+    
+    
+    
 }

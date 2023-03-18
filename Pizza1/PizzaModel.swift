@@ -9,13 +9,38 @@ import Foundation
 
 
 
-struct Product : Codable
+struct Pizza : Codable
 {
     let title : String
     let description : String
     let cost : Int
     let imageLink : String
-    let size : String
+    let price : Price
+    let fullDescription : String
+    
+    
+    /*enum Size : Codable
+    {
+        case small
+        case medium
+        case large
+    }*/
+    
+    struct Price: Codable{
+        let small : Int?
+        let medium : Int?
+        let large : Int?
+    }
+}
+
+struct Rolls : Codable
+
+{
+    let title : String
+    let description : String
+    let cost : Int
+    let imageLink : String
+    let quantity : Int
     let fullDescription : String
 }
 
