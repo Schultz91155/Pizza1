@@ -6,10 +6,13 @@
 //
 
 import Foundation
+
 struct AppConfig : Codable{
-    var productList : [[Pizza]]
-    
-    
-    
-    
+    let productList: ProductList
+
+    struct ProductList: Codable {
+        let pizzaList: [Pizza]
+        let rollList: [Rolls]
+    }
 }
+
