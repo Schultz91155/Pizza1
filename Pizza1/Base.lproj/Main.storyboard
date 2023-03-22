@@ -2,6 +2,7 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yTE-a3-OdI">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -150,14 +151,19 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
-                            <segmentedControl opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="gt9-YM-cAG">
-                                <rect key="frame" x="50" y="433" width="131" height="31"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="gt9-YM-cAG">
+                                <rect key="frame" x="50" y="432.5" width="314" height="32"/>
                                 <segments>
-                                    <segment title="First"/>
+                                    <segment title=""/>
                                     <segment title="Second"/>
                                 </segments>
                             </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0 rub" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D2j-sL-4VT">
+                                <rect key="frame" x="20" y="484" width="374" height="21"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleHeadline"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="M7h-Tx-7XK"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -166,16 +172,24 @@
                             <constraint firstItem="M7h-Tx-7XK" firstAttribute="bottom" secondItem="154-xb-Wba" secondAttribute="bottom" constant="25" id="9k5-im-ZvP"/>
                             <constraint firstItem="154-xb-Wba" firstAttribute="top" secondItem="ccK-Ud-Wts" secondAttribute="bottom" constant="30" id="CET-kx-pkI"/>
                             <constraint firstItem="M7h-Tx-7XK" firstAttribute="trailing" secondItem="ccK-Ud-Wts" secondAttribute="trailing" constant="50" id="D2g-Zb-T0J"/>
+                            <constraint firstItem="gt9-YM-cAG" firstAttribute="leading" secondItem="M7h-Tx-7XK" secondAttribute="leading" constant="50" id="EUq-JA-QEU"/>
                             <constraint firstItem="M7h-Tx-7XK" firstAttribute="trailing" secondItem="154-xb-Wba" secondAttribute="trailing" constant="50" id="GVs-an-NBd"/>
+                            <constraint firstItem="M7h-Tx-7XK" firstAttribute="trailing" secondItem="gt9-YM-cAG" secondAttribute="trailing" constant="50" id="Iqe-UG-b6J"/>
                             <constraint firstItem="gCf-Xn-QoA" firstAttribute="top" secondItem="AOH-qn-3lT" secondAttribute="bottom" constant="12" id="KFt-dX-b5f"/>
+                            <constraint firstItem="M7h-Tx-7XK" firstAttribute="trailing" secondItem="D2j-sL-4VT" secondAttribute="trailing" constant="20" id="UeP-a7-5k6"/>
+                            <constraint firstItem="D2j-sL-4VT" firstAttribute="top" secondItem="gt9-YM-cAG" secondAttribute="bottom" constant="20.5" id="ZA0-8o-6zL"/>
                             <constraint firstItem="AOH-qn-3lT" firstAttribute="leading" secondItem="M7h-Tx-7XK" secondAttribute="leading" constant="12" id="bKc-Id-fi5"/>
                             <constraint firstItem="M7h-Tx-7XK" firstAttribute="trailing" secondItem="AOH-qn-3lT" secondAttribute="trailing" constant="12" id="boL-4P-RQx"/>
+                            <constraint firstItem="gt9-YM-cAG" firstAttribute="centerY" secondItem="yUN-mC-uR0" secondAttribute="centerY" id="dMt-zU-Sev"/>
+                            <constraint firstItem="D2j-sL-4VT" firstAttribute="leading" secondItem="M7h-Tx-7XK" secondAttribute="leading" constant="20" id="ec2-ID-aNe"/>
                             <constraint firstItem="AOH-qn-3lT" firstAttribute="top" secondItem="M7h-Tx-7XK" secondAttribute="top" constant="12" id="iMV-lA-h1A"/>
                             <constraint firstItem="gCf-Xn-QoA" firstAttribute="centerX" secondItem="yUN-mC-uR0" secondAttribute="centerX" id="vS2-kT-LsM"/>
                             <constraint firstItem="ccK-Ud-Wts" firstAttribute="leading" secondItem="M7h-Tx-7XK" secondAttribute="leading" constant="50" id="xM4-2u-oax"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="priceLabel" destination="D2j-sL-4VT" id="Oyx-b9-NfK"/>
+                        <outlet property="sizeSegmetedControl" destination="gt9-YM-cAG" id="47h-G8-6V1"/>
                         <outlet property="titleLabel" destination="AOH-qn-3lT" id="ygg-oN-Rbl"/>
                     </connections>
                 </viewController>
